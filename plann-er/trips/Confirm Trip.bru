@@ -1,11 +1,11 @@
 meta {
-  name: Create Trip
+  name: Confirm Trip
   type: http
-  seq: 1
+  seq: 2
 }
 
-post {
-  url: http://localhost:3333/trips
+get {
+  url: http://localhost:3333/trips/325c482d-3aca-4658-a3f0-ac635990beba/confirm
   body: json
   auth: none
 }
@@ -13,7 +13,7 @@ post {
 body:json {
   {
     "destination": "Monte Verde",
-    "starts_at": "2024-08-03 00:00:00",
+    "starts_at": "2024-08-02 00:00:00",
     "ends_at": "2024-08-10 00:00:00",
     "owner_name": "Breno Martins",
     "owner_email": "sbrenomartins@gmail.com",

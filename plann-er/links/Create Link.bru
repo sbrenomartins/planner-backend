@@ -1,0 +1,18 @@
+meta {
+  name: Create Link
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3333/trips/325c482d-3aca-4658-a3f0-ac635990beba/links
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Passagens",
+    "url": "https://dev.to/wsantosdev/design-monolitos-modulares-parte-1-3fli"
+  }
+}

@@ -1,0 +1,18 @@
+meta {
+  name: Create Activity
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3333/trips/325c482d-3aca-4658-a3f0-ac635990beba/activities
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Brunch",
+    "occurs_at": "2024-08-04 10:00:00"
+  }
+}
