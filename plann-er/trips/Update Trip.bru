@@ -1,0 +1,19 @@
+meta {
+  name: Update Trip
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3333/trips/325c482d-3aca-4658-a3f0-ac635990beba
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "destination": "Gramado",
+    "starts_at": "2024-08-06 00:00:00",
+    "ends_at": "2024-08-10 00:00:00"
+  }
+}
